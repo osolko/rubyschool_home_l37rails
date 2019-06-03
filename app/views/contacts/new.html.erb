@@ -1,14 +1,14 @@
 <h1>Contacts</h1>
 
 
-<%= form_for :contacts, url: contacts_path  do |f| %>
+<%= form_for :contact, url: contacts_path  do |f| %>
 	<p> 
 		<%= f.label :Email %> <br/>
 		<%= f.text_field :email %>
 	</p>
 	<p>
 		<%= f.label :Message %> <br/>
-		<%= f.text_area :message%>
+		<%= f.text_area :message %>
 	</p>
 	<p>
 		<%= f.submit 'Send message' %>
