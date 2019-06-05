@@ -12,7 +12,6 @@ class ContactsController < ApplicationController
 		else
 			render action: 'new'
 		end		
-
 	end	
 	
 
