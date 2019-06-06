@@ -7,9 +7,14 @@ Rails.application.routes.draw do
   resource :contacts, only: [:new, :create], path_names: { :new => ''}
   #get 'contacts' => 'contacts#new'
 
-  resource :terms
+  get 'terms' => 'pages#terms'
 
-  resource :about
+  get 'about' => 'pages#about'
+
+
+  #resource :terms
+
+  #resource :about
 
   resource :check
 
