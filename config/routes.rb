@@ -12,8 +12,7 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
 
 
-  #resource :terms
-
+  #resource :terms  #we use another one controller pages and stati page see upper get 'terms' ... etc
   #resource :about
 
 

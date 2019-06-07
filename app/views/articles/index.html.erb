@@ -15,8 +15,7 @@
 <%= link_to 'View', article_path(art) %>
 <%= link_to 'Edit', edit_article_path(art) %>
 
-<%= link_to 'Delete', article_path(art), 
-                         method: :delete %> 
+<%= link_to 'Delete', article_path(art), method: :delete, data: {confirm: 'Are you sure?'} %> 
 
 
 
