@@ -4,30 +4,20 @@
 	<%= @article.text%>
 </p>
 
-
 <br/>
 <h4> Comments: </h4>
 
-<% @article.comments.each do |com| %>
 
+<% @article.comments.each do |com| %>
 <p>
-	author: <i><u><%= com.author %></u></i>
+	<i><u><%= com.author %></u> said:</i>
 </p>
 <p>
 	msg:  <%= com.body %>
 </p>
-<p>
-------------------------------
-</p>
 
-
+<hr/>
 <% end %>
-
-
-
-
-
-
 
 
 <%= form_for([@article, @article.comments.build]) do |f| %>
