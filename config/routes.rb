@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
+
+  root to: "home#index"
+
+ devise_for :users
+
 #  get 'home/contacts'
   get 'home/index'
+
+  get 'terms' => 'pages#terms'
+  get 'about' => 'pages#about'
 
   resources :articles do
   	resources :comments,  only: [:new, :create]
@@ -9,8 +17,7 @@ Rails.application.routes.draw do
   resource :contacts, only: [:new, :create], path_names: { :new => ''}
   #get 'contacts' => 'contacts#new'
 
-  get 'terms' => 'pages#terms'
-  get 'about' => 'pages#about'
+
 
 
 
