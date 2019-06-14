@@ -12,6 +12,7 @@
 <p>
 	<i><u><%= com.author %></u> said:</i>
 </p>
+
 <p>
 	msg:  <%= com.body %>
 </p>
@@ -22,12 +23,9 @@
 
 <%= form_for([@article, @article.comments.build]) do |f| %>
 
- 	<p> 
-		<%= f.label :author %> <br/>
-		<%= f.text_field :author %>
-	</p>
+
 	<p>
-		<%= f.label :Msg %> <br/>
+		<%= f.label :comments %>: <br/>
 		<%= f.text_area :body%>
 	</p>
 	<p>
