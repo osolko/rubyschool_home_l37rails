@@ -14,6 +14,6 @@ feature "Contact creattion" do
 		
 		visit '/contacts'
 		
-		expect(page).to have_content 'Contacts us'
+		expect(page).to have_content I18n.t('contacts.contact_us')
 	end
 end
